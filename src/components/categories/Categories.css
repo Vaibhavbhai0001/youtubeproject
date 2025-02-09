@@ -1,0 +1,63 @@
+.categories-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 12px 0;
+}
+
+.categories {
+  display: flex;
+  gap: 12px;
+  overflow-x: hidden;
+  padding: 0 24px;
+  scroll-behavior: smooth;
+}
+
+.category-chip {
+  background-color: #272727;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.category-chip:hover {
+  background-color: #3f3f3f;
+}
+
+.category-chip.active {
+  background-color: white;
+  color: black;
+}
+
+.scroll-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button.left {
+  left: 0;
+  background: linear-gradient(to right, #0f0f0f 50%, transparent);
+}
+
+.scroll-button.right {
+  right: 0;
+  background: linear-gradient(to left, #0f0f0f 50%, transparent);
+}
+
+.scroll-button .MuiSvgIcon-root {
+  width: 20px;
+  height: 20px;
+  color: white;
+} 
